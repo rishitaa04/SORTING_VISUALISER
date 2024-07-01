@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
+   
+<header>
+    <h1 align="center">Sorting Visualizer</h1>
+    <nav>
+        <div class="row">
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
+            </div>
+            <div class="col" id="input">     
+             
+                   <span id="size">Size:</span>
+                <input id="arr_sz" type="range" min="0" max="60" step=1 value=100>
+                <span id="size_arr">60</span>
+<br>
+                <span id="speed">Speed:</span>  
+                <input id="speed_input" type="range" min="0" max="300" stepDown=10 value=100> 
+                <span id="arr_speed">60</span> 
+            </div>     
+
+            <script>
+                const slideValue = document.querySelector("#size_arr");
+                const inputSlider = document.querySelector("#arr_sz");
+                inputSlider.oninput = (()=>{
+                    let value = inputSlider.value;
+                    slideValue.textContent = value;
+                    slideValue.style.left = (value/2) + "%";
+                    slideValue.classList.add("show");
+                });
+                inputSlider.onblur = (()=>{
+                    slideValue.classList.remove("show");
+                })
+            </script> 
+
+<script>
+    const slideValue_arr = document.querySelector("#arr_speed");
+    const inputSlider_arr = document.querySelector("#speed_input");
+    inputSlider_arr.oninput = (()=>{
+        let value = inputSlider_arr.value;
+        slideValue_arr.textContent = value;
+        slideValue_arr.style.left = (value/2) + "%";
+        slideValue_arr.classList.add("show");
+    });
+    inputSlider_arr.onblur = (()=>{
+        slideValue_arr.classList.remove("show");
+    })
+</script> 
+ 
+
+            <div class="col gap-2 d-sm-flex justify-content-end">
+                <button type="button" class="btn btn-outline-primary btn-dark bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark selectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
+               
+            </div>
+        </div>
+    </nav>
+</header>
+
+    
+    <div id="bars" class="flex-container"></div>
+
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+    
+</body>
+</html>  
+

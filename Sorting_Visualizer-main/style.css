@@ -1,0 +1,170 @@
+body {
+  background-color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 0 20px 30px 0;
+  line-height: 1.4;
+}
+.flex-container{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  transition: 2s all ease;
+}
+
+.flex-item{
+  background: rgb(255, 117, 227);
+  border: 1pt solid white;
+  width: 10px;
+  transition: 0.1s all ease;
+  
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+
+.bubbleSort {
+  background-color: grey;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+.bubbleSort:hover {
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+.selectionSort{
+  background-color: grey;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+
+.selectionSort:hover{
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+.insertionSort{
+  background-color: grey;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+
+.insertionSort:hover{
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+.quickSort{
+  background-color: grey;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+
+.quickSort:hover{
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+.mergeSort{
+  background-color: grey;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+
+.mergeSort:hover{
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+.newArray{
+  background-color: grey;
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal; /* Initial font weight */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease, font-weight 0.3s ease;
+}
+.newArray:hover{
+  background-color:rgb(255, 117, 227);
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: bold; /* Font weight on hover */
+  border-radius: 5px;
+}
+
+#size{
+  color:#fff;
+  font-weight:500;
+
+}
+
+ #size_arr{
+  color:#fff;
+  font-weight:500;
+  margin-right:60px;
+} 
+
+
+#speed{
+  color:#fff;
+  font-weight:500;
+  
+}
+
+#arr_speed{
+  color:#fff;
+  font-weight:500;
+
+}
+
+
+h1{
+  color:rgb(192, 202, 184);
+}
+h1:hover{
+  transform: scale(1.1);
+  transition:transform 0.5s ease;
+}
